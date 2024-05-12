@@ -13,7 +13,8 @@ import './App.css';
 
 const App = () => {
   return (
-    <div>
+    <div className="min-h-screen flex flex-col">
+        <div className="flex-grow px-8 md:px-16">
       <Header />
       <div id="hero">
         <Hero />
@@ -25,7 +26,7 @@ const App = () => {
         <Skills />
       </div>
       <div id="Certifications">
-        <Certifications /> {/* Add the Certifications component */}
+        <Certifications /> 
       </div>
       <div id="Projects">
         <Projects/>
@@ -37,6 +38,8 @@ const App = () => {
         <Footer/>
       </div>
     </div>
+  </div>
+
   );
 };
 
